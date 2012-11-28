@@ -3,44 +3,339 @@
 
 
 body {
-    //background: #f5f5f5;
+    background: @white;
+    color: @appBlack;
 }
 
-// Example for providing a data image via stylesheet
-// Add this class to any element to provide some extend of visual noise
-.make-some-noise {
-    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQMAAAC032DuAAAABlBMVEUAAAAAAAClZ7nPAAAAAnRSTlMACHhIRQoAAAN7SURBVCiRAXADj/wAAkQJcM1mLQnAjAAb4sEhBjkWRBpWAIKF/FlkjVDJKKgA0KxA5QFOFWKpQgBG5PjjxiiDVJtnAHD5UwQVQstA7u8AOAYIMPmwiKga2gBooyeQA+jdVxiNABAIYGkr3lgTDBsAXQBAcGFmEGFEXQAwUgJEk6SsEMjDAApsetkgJK9PKJQAfDApaQUONGIDEgAKpcRsXsojEuY1ACYN4xSjdyGRVLcAsCBxpEiAUIkwYgBGLNoX24Yj9iJRAGMGy8gopJFOQvkAEZgtO9HAJC+9WACKQEJCwJGqpRoIAKYmUxdgMdl89AIApMRLQ/2pQLVbBQBDTLPsYJCDUEjoAHzhwoxoCKB4DAgAAN6ASuQFERMyvQCzWAJoFpkGjFsGAGLQnTrBTH4zIKIAFGUFG3UALzJDiwCmsCEwxUDwgFgIAFi/LtLBIAUJNBEAE4TENLhU8TjOCgAtAYILmwxnJrBoAAhNyenNNwViQFkANAFOhHKUo84QUAD0DRiji8DNOMJqADHrmeMWgFAgRrQAmIm9A9EhEGSBSgAulqWIGymRfxpwAH0DAAQSAnKWgdQASeJNibLEQzNOZwBzyCNrQnAEFoQoAAxMomBElggSqkgAAwFV5OAQZJ28ZwCCFaFCjSWxAObRAB8AJgRUj4BKIygApBGgk0MCkUMxFADVwIDCBY+OdMWgAG1xdOROdABshSMACAFX0QKD4hVCgwB2Mh6ZnAco8kNpAHsI4C8RY9CIiewAqyAZg6UNgAz7mgBkAxCbD25svIhqACgzbQNxciGqYNQAkARc2iVSMJ2lZADNJknADN80kC5jAOOUE5OONKUAsA0ARQLA1ABqDAEQCACIlnFgRPrqeUQyAKkAOV/GAUgi1RAAeAIX22Pv4uTlJABvEiKL1OBOaIWIAEsoNPRyRGQcMM0AQmzLIn0jGg0gNAAqsAQfVSb/NB1UAAi0AywKJQUIjCoA85ksYPNtqJExcQAYgoDzhYBwbWAdAKsgPswqlOqHbJMAUQlvpxLB1UzAGABpyxQ0mCs81wNXACHgmQEVxF1T9FUA8jrxkbDXWRJhoQBgoSwOksFRSSibACNkCSFowJxiMBYA4ek2cwRDk1DM8wCQCsQXTxHsamgRAEGGIlVQmcLwKhUAG+wigJjtKYW0HQC0OKRNEGFqXIOAbRpCReUGtgIAAAAASUVORK5CYII=);
+.visualClear {
+    clear: both;
 }
 
-// Example styles for a custom editbar override of the basic
-// twitter bootstarp navbar to make the edit bar look like a
-// browser toolbar
+a {
+    outline: none !important;
+    color: @appBlack;
+}
+
+.navbar .nav > li > a {
+    text-shadow: none;
+}
+
+.selected a {
+    font-size: 24px !important;
+}
+
 body > header {
-    #editbar-wrapper {
-        .navbar-inner {
-            #gradient > .vertical(@grayLight, @grayLight);
-            #editbar {
-                .brand {
-                    color: @textColor;
+    #header {
+        background: transparent;
+        width: 960px;
+        margin-top: 40px;
+        border-bottom: 1px solid @appBlack;
+        a:hover {
+                text-decoration: none;
+            }
+        #logo {
+            display: block;
+            margin: 0px 0px 0px 0px;
+            border: 0px;
+            float: right;
+            border: 0px solid red;
+            color: @appBlack;
+            text-transform: uppercase;
+            font-size: @fontSizeLarge + 10px;
+            font-weight: normal;
+            
+        }
+        #nav-search {
+            border: 0px solid red;
+            margin-top: @baseLineHeight * 2; 
+        }
+        .navbar {
+            ul {
+                margin: 0px;
+            }
+            
+            float: left;
+            .navbar-inner {
+                background: transparent;
+                padding: 0px;
+                box-shadow: none;
+                margin-left: -10px;
+                .nav {
+                    
+
+                }
+                #main-nav li {
+                    text-align: center;
+                    line-height: 25px;
+                    display: inline;
+                    background:url(../img/bullet.gif)  no-repeat right bottom;
+                    a {
+                        color: @appBlack;
+                        font-weight: normal;
+                        text-transform: uppercase;
+                        font-size: 16px;
+                        padding: 5px 12px 5px 10px;
+                        text-shadow: none !important;
+                    }
+                    a:hover {
+                        background:url(../img/active.gif)  no-repeat center bottom;
+                    }
+                    &.active {
+                        background-color: @white;
+                        .square(35px);
+                        a {
+                            background-color: @white;
+                            color: @white;
+                            box-shadow: none;
+                            border: 13px solid @appBlue;
+                            padding: 9px 0px 0px 0px;   
+                        }
+                    }
+                }
+                .border-radius(0px);
+            }
+            margin-bottom: 0px;
+            border: 0px solid red;
+            padding: 0px;
+        }
+    }
+    #toolbar + #header {
+        margin-top: @navbarHeight;
+    }
+}
+
+#portaltab-impressum {
+                        background: none !important;
+                    }
+
+
+
+// Base utility classes
+
+.panel {
+    width: 960px;
+    margin: 0 auto;
+    background: @white;
+    .border-radius(0px);
+    &.panel-news {
+        padding: @baseLineHeight;
+        margin-bottom: 0px;
+        .box {
+            border-right: 1px solid @grayLighter;
+            padding-right: @baseLineHeight * 1.5;
+        }
+        h5 {
+            color: @appBlue;
+        }
+        img {
+            border-top: 4px solid;
+        }
+        p {
+            margin-top: @baseLineHeight / 2;
+            font-size: @fontSizeSmall;
+            line-height: @baseLineHeight - 4;
+        }
+    }
+}
+
+
+.next {
+    border: 0px solid red;
+    background:url(../img/arrow-right.png)  no-repeat top left;
+    padding: 0px 20px 20px 0px;
+    text-indent: -9999999px;
+    margin: -20px 0px 0px 0px;
+    display: inline;
+}
+
+#below-content .listingBar .next {
+   text-indent: 0px !important; 
+   display: block;
+   border: 0px solid red;
+   margin: 0px;
+   background: transparent;
+   position: relative;
+   float: right;
+   padding: 0px;
+}
+
+#below-content .listingBar .prev  {
+   text-indent: 0px !important; 
+   display: block;
+   border: 1px solid red;
+}
+
+.prev {
+    border: 0px solid red;
+    background:url(../img/arrow-left.png)  no-repeat 10px 0px;
+    padding: 0px 0px 20px 20px;
+    text-indent: -9999999px;
+    margin: -20px 0px 0px 0px;
+}
+
+.carousel-info {
+    float: right;
+}
+
+// Main content area styles
+
+#portal-breadcrumbs {
+    padding: @baseLineHeight / 2 20px;
+    padding-left: 0px;
+    font-size: @fontSizeMini;
+}
+
+#above-content {
+    width: 960px;
+    margin: 0px auto 0px auto;
+    border-radius: @baseBorderRadius;
+    .carousel {
+        margin-bottom: 0px;
+    }
+    .carousel img {
+        border-top-left-radius: @baseBorderRadius;
+        border-top-right-radius: @baseBorderRadius;
+    }
+    .carousel-pager {
+            margin: -40px 0px 0px 20px;
+            position: absolute;
+            .carousel-pager-item, 
+            .carousel-pager-button-prev, 
+            .carousel-pager-button-next {
+                padding: 2px 5px;
+                background: @appGrey;
+                font-size: @fontSizeMini;
+                a:link {
+
+                }
+            }
+        }
+    .carousel-text {
+        background:url(../img/transparent.png)  repeat 0px 0px;
+        .carousel-title {
+            font-size: @fontSizeLarge  * 1.5;
+            color: @appRed;
+            margin-bottom: @baseLineHeight;
+            display: block;
+        }
+        .carousel-body {
+            line-height: @baseLineHeight;
+            display: block;
+        }
+    }
+}
+
+#content {
+    padding: 0;
+    width: 960px;
+    background: @white;
+    #frontpage-content {
+    padding: 0;
+
+    }
+}
+
+#below-content {
+    border: 0px solid red;
+    width: 960px;
+    margin: 0px auto;
+}
+
+.projects{
+
+    h2 {
+        border-bottom: 1px solid @appBlack;
+        color: @appBlack;
+        margin-bottom: @baseLineHeight;
+        font-weight: normal;
+        text-transform: uppercase;
+}
+    h3 {
+        text-transform: uppercase;
+    }
+} 
+.project-header {
+        border-bottom: 1px solid @appBlack;
+        color: @appBlack;
+        margin-bottom: @baseLineHeight;
+        text-transform: uppercase;
+}
+.documentFirstHeading {
+        color: @appBlack;
+    }
+
+a.link-more {
+    font-size: @baseFontSize * 1.5;
+    text-decoration: none;
+    line-height: @baseLineHeight / 4;
+    margin-bottom: 9px;
+    &:hover {
+        color: @black;
+    }
+}
+
+
+
+// Sidebar specific styles
+
+#sidebar {
+    padding: @baseLineHeight @baseLineHeight / 2;
+    .box {
+        .clearfix();
+        h4,
+        h5 {
+            color: @appBlue;
+            margin: 5px 0px 3px 0px;
+        }
+        p {
+            margin: 0;
+            font-size: @fontSizeMini;
+            color: @black;
+        }
+        .btn {
+            margin-top: @baseLineHeight / 2;
+            .border-radius(0);
+            .buttonBackground(@grayLight, lighten(@grayLight, 5%));
+        }
+        .box-content {
+            border: 1px solid @grayLighter;
+            border-top: 4px solid;
+            .box-item {
+                padding: @paddingMini; 
+                .clearfix();
+                &:nth-child(odd) {
+                    background-color: @tableBackgroundAccent;
                 }
             }
         }
     }
-    #editbar-wrapper + nav {
-        margin-top: @navbarHeight;
-        .navbar-inner {
-            .border-radius(0px);
-            .container {
-                width: @gridRowWidth;
-                .container-fixed();
+}
+
+// site footer
+
+#site-footer {
+
+}
+
+body > footer {
+    margin-top: @baseLineHeight;
+    padding: @baseLineHeight /3;
+    #footer {
+        padding: 20px 0px 0px 0px;
+        width: 960px;
+        text-shadow: none;
+        border-top: 1px solid @appBlack;
+        .signature {
+                text-transform: uppercase;   
+            }
+        .info {
+            margin-bottom: @baseLineHeight;
+            color: @appBlack;
+            text-transform: uppercase;
+            font-size: @fontSizeMini + 1px;
+            a {
+                color: @appBlack;
             }
         }
     }
-}
-
-// Example styles for a HMTL5 based site footer
-body > footer {
-    margin-top: @baseLineHeight;
-    padding: @baseLineHeight 0;
-    border-top: 1px solid @grayLighter;
 }
