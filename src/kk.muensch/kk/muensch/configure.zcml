@@ -12,7 +12,7 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="Isabell Münsch Diazo Theme"
+      title="Isabell Muensch Diazo Theme"
       directory="profiles/default"
       description="Installs the kk.muensch package"
       provides="Products.GenericSetup.interfaces.EXTENSION"

@@ -5,7 +5,7 @@ version = '1.0'
 
 setup(name='kk.muensch',
       version=version,
-      description="Isabell Münsch Diazo Plone Theme",
+      description="Isabell Muensch Diazo Plone Theme",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
@@ -20,7 +20,7 @@ setup(name='kk.muensch',
       url='http://dist.kreativkombinat.de',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
-      namespace_packages=['example'],
+      namespace_packages=['kk'],
       include_package_data=True,
       zip_safe=False,
       install_requires=[
