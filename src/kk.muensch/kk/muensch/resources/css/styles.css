@@ -140,11 +140,11 @@ body {
   background-color: #ffffff;
 }
 a {
-  color: #666666;
+  color: #993300;
   text-decoration: none;
 }
 a:hover {
-  color: #404040;
+  color: #4d1a00;
   text-decoration: underline;
 }
 .row {
@@ -2278,7 +2278,7 @@ ul.icons li .icon-large:before {
 .dropdown-menu .active > a:hover {
   color: #ffffff;
   text-decoration: none;
-  background-color: #666666;
+  background-color: #993300;
 }
 .open {
   *z-index: 1000;
@@ -2535,18 +2535,18 @@ button.close {
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
 .btn-primary {
-  background-color: #666666;
-  background-image: -moz-linear-gradient(top, #666666, #666666);
-  background-image: -ms-linear-gradient(top, #666666, #666666);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#666666), to(#666666));
-  background-image: -webkit-linear-gradient(top, #666666, #666666);
-  background-image: -o-linear-gradient(top, #666666, #666666);
-  background-image: linear-gradient(top, #666666, #666666);
+  background-color: #994700;
+  background-image: -moz-linear-gradient(top, #993300, #996600);
+  background-image: -ms-linear-gradient(top, #993300, #996600);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#993300), to(#996600));
+  background-image: -webkit-linear-gradient(top, #993300, #996600);
+  background-image: -o-linear-gradient(top, #993300, #996600);
+  background-image: linear-gradient(top, #993300, #996600);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#666666', endColorstr='#666666', GradientType=0);
-  border-color: #666666 #666666 #404040;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#993300', endColorstr='#996600', GradientType=0);
+  border-color: #996600 #996600 #4d3300;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #666666;
+  *background-color: #996600;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
@@ -2556,12 +2556,12 @@ button.close {
 .btn-primary.active,
 .btn-primary.disabled,
 .btn-primary[disabled] {
-  background-color: #666666;
-  *background-color: #595959;
+  background-color: #996600;
+  *background-color: #805500;
 }
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #4d4d4d \9;
+  background-color: #664400 \9;
 }
 .btn-warning {
   background-color: #faa732;
@@ -2848,7 +2848,7 @@ input[type="submit"].btn.btn-mini {
   background-color: #e6e6e6;
 }
 .btn-group.open .btn-primary.dropdown-toggle {
-  background-color: #666666;
+  background-color: #996600;
 }
 .btn-group.open .btn-warning.dropdown-toggle {
   background-color: #f89406;
@@ -2994,7 +2994,7 @@ input[type="submit"].btn.btn-mini {
 .nav-list > .active > a:hover {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
-  background-color: #666666;
+  background-color: #993300;
 }
 .nav-list [class^="icon-"] {
   margin-right: 2px;
@@ -3072,7 +3072,7 @@ input[type="submit"].btn.btn-mini {
 .nav-pills > .active > a,
 .nav-pills > .active > a:hover {
   color: #ffffff;
-  background-color: #666666;
+  background-color: #993300;
 }
 .nav-stacked > li {
   float: none;
@@ -3121,14 +3121,14 @@ input[type="submit"].btn.btn-mini {
 }
 .nav-tabs .dropdown-toggle .caret,
 .nav-pills .dropdown-toggle .caret {
-  border-top-color: #666666;
-  border-bottom-color: #666666;
+  border-top-color: #993300;
+  border-bottom-color: #993300;
   margin-top: 6px;
 }
 .nav-tabs .dropdown-toggle:hover .caret,
 .nav-pills .dropdown-toggle:hover .caret {
-  border-top-color: #404040;
-  border-bottom-color: #404040;
+  border-top-color: #4d1a00;
+  border-bottom-color: #4d1a00;
 }
 .nav-tabs .active .dropdown-toggle .caret,
 .nav-pills .active .dropdown-toggle .caret {
@@ -4049,7 +4049,7 @@ input[type="submit"].btn.btn-mini {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 a.thumbnail:hover {
-  border-color: #666666;
+  border-color: #993300;
   -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
@@ -4979,35 +4979,33 @@ a {
   outline: none !important;
   color: #797979;
 }
+.selected a {
+  background-color: #ffffff;
+  color: #b28654 !important;
+  box-shadow: none;
+  padding: 9px 0px 0px 0px;
+}
 .navbar .nav > li > a {
   text-shadow: none;
 }
-.selected a {
-  font-size: 24px !important;
-}
 body > header #header {
   background: transparent;
-  width: 960px;
-  margin-top: 40px;
-  border-bottom: 1px solid #797979;
+  margin-top: 0px;
+  background: url(../img/logo.jpg) no-repeat 0 0;
+  width: 800px;
+  height: 319px;
 }
 body > header #header a:hover {
   text-decoration: none;
 }
 body > header #header #logo {
   display: block;
-  margin: 0px 0px 0px 0px;
+  margin: 0px;
   border: 0px;
   float: right;
-  border: 0px solid red;
-  color: #797979;
-  text-transform: uppercase;
-  font-size: 25px;
-  font-weight: normal;
-}
-body > header #header #nav-search {
-  border: 0px solid red;
-  margin-top: 40px;
+  text-indent: -9999999px;
+  width: 800px;
+  height: 222px;
 }
 body > header #header .navbar {
   float: left;
@@ -5020,9 +5018,8 @@ body > header #header .navbar ul {
 }
 body > header #header .navbar .navbar-inner {
   background: transparent;
-  padding: 0px;
+  padding: 20px 0px 0px 0px;
   box-shadow: none;
-  margin-left: -10px;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
@@ -5037,24 +5034,12 @@ body > header #header .navbar .navbar-inner #main-nav li a {
   color: #797979;
   font-weight: normal;
   text-transform: uppercase;
-  font-size: 16px;
-  padding: 5px 12px 5px 10px;
+  font-size: 14px;
+  padding: 5px 18px 5px 0px;
   text-shadow: none !important;
 }
 body > header #header .navbar .navbar-inner #main-nav li a:hover {
   background: url(../img/active.gif) no-repeat center bottom;
-}
-body > header #header .navbar .navbar-inner #main-nav li.active {
-  background-color: #ffffff;
-  width: 35px;
-  height: 35px;
-}
-body > header #header .navbar .navbar-inner #main-nav li.active a {
-  background-color: #ffffff;
-  color: #ffffff;
-  box-shadow: none;
-  border: 13px solid #003366;
-  padding: 9px 0px 0px 0px;
 }
 body > header #toolbar + #header {
   margin-top: 40px;
@@ -5063,7 +5048,7 @@ body > header #toolbar + #header {
   background: none !important;
 }
 .panel {
-  width: 960px;
+  width: 800px;
   margin: 0 auto;
   background: #ffffff;
   -webkit-border-radius: 0px;
@@ -5128,7 +5113,7 @@ body > header #toolbar + #header {
   font-size: 9.84px;
 }
 #above-content {
-  width: 960px;
+  width: 800px;
   margin: 0px auto 0px auto;
   border-radius: 4px;
 }
@@ -5165,7 +5150,7 @@ body > header #toolbar + #header {
 }
 #content {
   padding: 0;
-  width: 960px;
+  width: 800px;
   background: #ffffff;
 }
 #content #frontpage-content {
@@ -5173,7 +5158,7 @@ body > header #toolbar + #header {
 }
 #below-content {
   border: 0px solid red;
-  width: 960px;
+  width: 800px;
   margin: 0px auto;
 }
 .projects h2 {
@@ -5286,19 +5271,21 @@ body > footer {
 }
 body > footer #footer {
   padding: 20px 0px 0px 0px;
-  width: 960px;
+  width: 800px;
   text-shadow: none;
   border-top: 1px solid #797979;
 }
+body > footer #footer a {
+  color: #993300;
+}
 body > footer #footer .signature {
   text-transform: uppercase;
+  font-size: 9.84px;
+  color: #797979;
 }
 body > footer #footer .info {
   margin-bottom: 20px;
   color: #797979;
   text-transform: uppercase;
-  font-size: 10.84px;
-}
-body > footer #footer .info a {
-  color: #797979;
+  font-size: 9.84px;
 }

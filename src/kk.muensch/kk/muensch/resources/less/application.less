@@ -16,50 +16,49 @@ a {
     color: @appBlack;
 }
 
-.navbar .nav > li > a {
-    text-shadow: none;
+.selected {
+    a {
+        background-color: @white;
+        color: #b28654 !important;
+        box-shadow: none;
+        padding: 9px 0px 0px 0px;   
+    }
 }
 
-.selected a {
-    font-size: 24px !important;
+.navbar .nav > li > a {
+    text-shadow: none;
 }
 
 body > header {
     #header {
         background: transparent;
-        width: 960px;
-        margin-top: 40px;
-        border-bottom: 1px solid @appBlack;
+        width: 800px;
+        margin-top: 0px;
+        background:url(../img/logo.jpg)  no-repeat 0 0;
+        width: 800px;
+        height: 319px;
         a:hover {
                 text-decoration: none;
             }
         #logo {
             display: block;
-            margin: 0px 0px 0px 0px;
+            margin: 0px;
             border: 0px;
             float: right;
-            border: 0px solid red;
-            color: @appBlack;
-            text-transform: uppercase;
-            font-size: @fontSizeLarge + 10px;
-            font-weight: normal;
+            text-indent: -9999999px;
+            width: 800px;
+            height: 222px;
             
-        }
-        #nav-search {
-            border: 0px solid red;
-            margin-top: @baseLineHeight * 2; 
         }
         .navbar {
             ul {
                 margin: 0px;
             }
-            
             float: left;
             .navbar-inner {
                 background: transparent;
-                padding: 0px;
+                padding: @baseLineHeight 0px 0px 0px;
                 box-shadow: none;
-                margin-left: -10px;
                 .nav {
                     
 
@@ -69,28 +68,19 @@ body > header {
                     line-height: 25px;
                     display: inline;
                     background:url(../img/bullet.gif)  no-repeat right bottom;
+                    
                     a {
                         color: @appBlack;
                         font-weight: normal;
                         text-transform: uppercase;
-                        font-size: 16px;
-                        padding: 5px 12px 5px 10px;
+                        font-size: 14px;
+                        padding: 5px 18px 5px 0px;
                         text-shadow: none !important;
                     }
                     a:hover {
                         background:url(../img/active.gif)  no-repeat center bottom;
                     }
-                    &.active {
-                        background-color: @white;
-                        .square(35px);
-                        a {
-                            background-color: @white;
-                            color: @white;
-                            box-shadow: none;
-                            border: 13px solid @appBlue;
-                            padding: 9px 0px 0px 0px;   
-                        }
-                    }
+
                 }
                 .border-radius(0px);
             }
@@ -113,7 +103,7 @@ body > header {
 // Base utility classes
 
 .panel {
-    width: 960px;
+    width: 800px;
     margin: 0 auto;
     background: @white;
     .border-radius(0px);
@@ -186,7 +176,7 @@ body > header {
 }
 
 #above-content {
-    width: 960px;
+    width: 800px;
     margin: 0px auto 0px auto;
     border-radius: @baseBorderRadius;
     .carousel {
@@ -227,7 +217,7 @@ body > header {
 
 #content {
     padding: 0;
-    width: 960px;
+    width: 800px;
     background: @white;
     #frontpage-content {
     padding: 0;
@@ -237,7 +227,7 @@ body > header {
 
 #below-content {
     border: 0px solid red;
-    width: 960px;
+    width: 800px;
     margin: 0px auto;
 }
 
@@ -313,29 +303,27 @@ a.link-more {
 
 // site footer
 
-#site-footer {
-
-}
-
 body > footer {
     margin-top: @baseLineHeight;
     padding: @baseLineHeight /3;
     #footer {
         padding: 20px 0px 0px 0px;
-        width: 960px;
+        width: 800px;
         text-shadow: none;
         border-top: 1px solid @appBlack;
+        a {
+            color: @linkColor;
+            }
         .signature {
-                text-transform: uppercase;   
+            text-transform: uppercase;
+            font-size: @fontSizeMini;
+            color: @appBlack;   
             }
         .info {
             margin-bottom: @baseLineHeight;
             color: @appBlack;
             text-transform: uppercase;
-            font-size: @fontSizeMini + 1px;
-            a {
-                color: @appBlack;
-            }
+            font-size: @fontSizeMini;
         }
     }
 }
