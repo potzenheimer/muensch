@@ -4970,14 +4970,14 @@ table.grid th {
 }
 body {
   background: #ffffff;
-  color: #797979;
+  color: #000000;
 }
 .visualClear {
   clear: both;
 }
 a {
   outline: none !important;
-  color: #797979;
+  color: #000000;
 }
 .selected a {
   background-color: #ffffff;
@@ -5031,7 +5031,7 @@ body > header #header .navbar .navbar-inner #main-nav li {
   background: url(../img/bullet.gif) no-repeat right bottom;
 }
 body > header #header .navbar .navbar-inner #main-nav li a {
-  color: #797979;
+  color: #000000;
   font-weight: normal;
   text-transform: uppercase;
   font-size: 14px;
@@ -5148,13 +5148,39 @@ body > header #toolbar + #header {
   line-height: 20px;
   display: block;
 }
+#portal-breadcrumbs {
+  display: none !important;
+}
 #content {
   padding: 0;
   width: 800px;
   background: #ffffff;
 }
+#content h2 {
+  font-weight: bold;
+}
+#content .image-left {
+  border: 1px dotted #999999 !important;
+  padding: 10px;
+  clear: both;
+  float: left;
+  margin: 0.5em 1em 0.5em 0;
+}
+#content .documentFirstHeading {
+  background: none repeat scroll 0 0 transparent;
+  border: 0 none;
+  color: #993300;
+  font-size: 140%;
+  font-weight: bold;
+  margin: 0 0 10px;
+  padding: 0;
+  text-transform: uppercase;
+}
 #content #frontpage-content {
   padding: 0;
+}
+table.plain {
+  width: 780px !important;
 }
 #below-content {
   border: 0px solid red;
@@ -5162,8 +5188,8 @@ body > header #toolbar + #header {
   margin: 0px auto;
 }
 .projects h2 {
-  border-bottom: 1px solid #797979;
-  color: #797979;
+  border-bottom: 1px solid #000000;
+  color: #000000;
   margin-bottom: 20px;
   font-weight: normal;
   text-transform: uppercase;
@@ -5172,13 +5198,13 @@ body > header #toolbar + #header {
   text-transform: uppercase;
 }
 .project-header {
-  border-bottom: 1px solid #797979;
-  color: #797979;
+  border-bottom: 1px solid #000000;
+  color: #000000;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 .documentFirstHeading {
-  color: #797979;
+  color: #000000;
 }
 a.link-more {
   font-size: 18px;
@@ -5273,7 +5299,7 @@ body > footer #footer {
   padding: 20px 0px 0px 0px;
   width: 800px;
   text-shadow: none;
-  border-top: 1px solid #797979;
+  border-top: 1px solid #000000;
 }
 body > footer #footer a {
   color: #993300;
@@ -5281,11 +5307,11 @@ body > footer #footer a {
 body > footer #footer .signature {
   text-transform: uppercase;
   font-size: 9.84px;
-  color: #797979;
+  color: #000000;
 }
 body > footer #footer .info {
   margin-bottom: 20px;
-  color: #797979;
+  color: #000000;
   text-transform: uppercase;
   font-size: 9.84px;
 }
