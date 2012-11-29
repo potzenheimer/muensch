@@ -133,7 +133,7 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Trebuchet MS, sans-serif;
   font-size: 12px;
   line-height: 20px;
   color: #333333;
@@ -361,7 +361,7 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Trebuchet MS, sans-serif;
   font-weight: normal;
   color: inherit;
   text-rendering: optimizelegibility;
@@ -627,7 +627,7 @@ input,
 button,
 select,
 textarea {
-  font-family: Arial, sans-serif;
+  font-family: Trebuchet MS, sans-serif;
 }
 label {
   display: block;
@@ -3362,7 +3362,7 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar-search .search-query {
   padding: 4px 9px;
-  font-family: Arial, sans-serif;
+  font-family: Trebuchet MS, sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 1;
@@ -4969,7 +4969,7 @@ table.grid th {
   clear: both;
 }
 body {
-  background: #ffffff;
+  background: #6D1919;
   color: #000000;
 }
 .visualClear {
@@ -4990,9 +4990,9 @@ a {
 }
 body > header #header {
   background: transparent;
+  width: 800px;
   margin-top: 0px;
   background: url(../img/logo.jpg) no-repeat 0 0;
-  width: 800px;
   height: 319px;
 }
 body > header #header a:hover {
@@ -5004,7 +5004,7 @@ body > header #header #logo {
   border: 0px;
   float: right;
   text-indent: -9999999px;
-  width: 800px;
+  width: 760px;
   height: 222px;
 }
 body > header #header .navbar {
@@ -5014,7 +5014,7 @@ body > header #header .navbar {
   padding: 0px;
 }
 body > header #header .navbar ul {
-  margin: 0px;
+  margin: 0px 0px 0px 20px;
 }
 body > header #header .navbar .navbar-inner {
   background: transparent;
@@ -5034,9 +5034,10 @@ body > header #header .navbar .navbar-inner #main-nav li a {
   color: #000000;
   font-weight: normal;
   text-transform: uppercase;
-  font-size: 14px;
-  padding: 5px 18px 5px 0px;
+  font-size: 13px;
+  padding: 0px 7px 2px 6px;
   text-shadow: none !important;
+  border-right: 2px solid #000000;
 }
 body > header #header .navbar .navbar-inner #main-nav li a:hover {
   background: url(../img/active.gif) no-repeat center bottom;
@@ -5044,11 +5045,11 @@ body > header #header .navbar .navbar-inner #main-nav li a:hover {
 body > header #toolbar + #header {
   margin-top: 40px;
 }
-#portaltab-impressum {
-  background: none !important;
+#portaltab-kontakt a {
+  border: none !important;
 }
 .panel {
-  width: 800px;
+  width: 760px;
   margin: 0 auto;
   background: #ffffff;
   -webkit-border-radius: 0px;
@@ -5113,7 +5114,7 @@ body > header #toolbar + #header {
   font-size: 9.84px;
 }
 #above-content {
-  width: 800px;
+  width: 760px;
   margin: 0px auto 0px auto;
   border-radius: 4px;
 }
@@ -5151,9 +5152,12 @@ body > header #toolbar + #header {
 #portal-breadcrumbs {
   display: none !important;
 }
+#wrapper {
+  padding: 20px;
+}
 #content {
   padding: 0;
-  width: 800px;
+  width: 760px;
   background: #ffffff;
 }
 #content h2 {
@@ -5184,7 +5188,7 @@ table.plain {
 }
 #below-content {
   border: 0px solid red;
-  width: 800px;
+  width: 760px;
   margin: 0px auto;
 }
 .projects h2 {
@@ -5292,14 +5296,15 @@ a.link-more:hover {
   background-color: #f9f9f9;
 }
 body > footer {
-  margin-top: 20px;
-  padding: 6.666666666666667px;
+  margin-bottom: 20px;
+  padding: 0;
 }
 body > footer #footer {
-  padding: 20px 0px 0px 0px;
-  width: 800px;
+  padding: 20px 20px 0px 20px;
+  width: 760px;
   text-shadow: none;
-  border-top: 1px solid #000000;
+  border-top: 1px dotted #000000;
+  background: white;
 }
 body > footer #footer a {
   color: #993300;
