@@ -4979,8 +4979,8 @@ a {
   outline: none !important;
 }
 .selected a {
-  background-color: #ffffff;
-  color: #b28654 !important;
+  background-color: none;
+  color: #993300 !important;
   box-shadow: none;
   padding: 9px 0px 0px 0px;
 }
@@ -5027,7 +5027,6 @@ body > header #header .navbar .navbar-inner #main-nav li {
   text-align: center;
   line-height: 25px;
   display: inline;
-  background: url(../img/bullet.gif) no-repeat right bottom;
 }
 body > header #header .navbar .navbar-inner #main-nav li a {
   color: #000000;
