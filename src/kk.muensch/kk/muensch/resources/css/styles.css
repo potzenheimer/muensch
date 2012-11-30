@@ -4988,7 +4988,6 @@ a {
   text-shadow: none;
 }
 body > header #header {
-  background: transparent;
   width: 800px;
   margin-top: 0px;
   background: url(../img/logo.jpg) no-repeat 0 0;
@@ -5003,22 +5002,29 @@ body > header #header #logo {
   border: 0px;
   float: right;
   text-indent: -9999999px;
-  width: 760px;
+  width: 800px;
   height: 222px;
 }
 body > header #header .navbar {
+  background: transparent !important;
   float: left;
-  margin-bottom: 0px;
-  border: 0px solid red;
-  padding: 0px;
 }
 body > header #header .navbar ul {
   margin: 0px 0px 0px 20px;
+  background: transparent !important;
 }
 body > header #header .navbar .navbar-inner {
-  background: transparent;
+  background: transparent !important;
+  background-image: none;
   padding: 20px 0px 0px 0px;
   box-shadow: none;
+  filter: none;
+}
+body > header #header .navbar .navbar-inner .nav {
+  background: transparent !important;
+}
+body > header #header .navbar .navbar-inner #main-nav {
+  background: transparent !important;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;

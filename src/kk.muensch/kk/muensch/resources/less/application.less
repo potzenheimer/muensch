@@ -30,38 +30,42 @@ a {
 
 body > header {
     #header {
-        background: transparent;
         width: 800px;
         margin-top: 0px;
         background:url(../img/logo.jpg)  no-repeat 0 0;
         height: 319px;
-        a:hover {
-                text-decoration: none;
-            }
+        a:hover {text-decoration: none;}
         #logo {
             display: block;
             margin: 0px;
             border: 0px;
             float: right;
             text-indent: -9999999px;
-            width: 760px;
+            width: 800px;
             height: 222px;
             
         }
         .navbar {
+            background: transparent !important;
             ul {
                 margin: 0px 0px 0px 20px;
+                background: transparent !important;
             }
             float: left;
             .navbar-inner {
-                background: transparent;
+                background: transparent !important;
+                background-image: none;
                 padding: @baseLineHeight 0px 0px 0px;
                 box-shadow: none;
+                filter: none;
                 .nav {
+                    background: transparent !important;
                     
 
                 }
-                #main-nav li {
+                #main-nav {
+                    background: transparent !important;
+                li {
                     text-align: center;
                     line-height: 25px;
                     display: inline;
@@ -82,9 +86,7 @@ body > header {
                 }
                 .border-radius(0px);
             }
-            margin-bottom: 0px;
-            border: 0px solid red;
-            padding: 0px;
+            }
         }
     }
     #toolbar + #header {
