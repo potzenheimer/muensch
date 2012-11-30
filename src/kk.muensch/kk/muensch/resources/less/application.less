@@ -254,7 +254,20 @@ body > header {
 }
 
 table.plain {
-        width: 780px !important;
+    width: 780px !important;
+    td {
+    background: none repeat scroll 0 0 #E59723;
+    border: 2px solid white !important;
+    padding: 10px 30px 10px 10px !important;
+    vertical-align: top;
+}
+th {
+    background: none repeat scroll 0 0 #E59723;
+    border: 2px solid white !important;
+    color: #6D1919;
+    padding: 10px !important;
+    text-align: left;
+}
     }
 
 #below-content {
@@ -263,80 +276,11 @@ table.plain {
     margin: 0px auto;
 }
 
-.projects{
-
-    h2 {
-        border-bottom: 1px solid @appBlack;
-        color: @appBlack;
-        margin-bottom: @baseLineHeight;
-        font-weight: normal;
-        text-transform: uppercase;
-}
-    h3 {
-        text-transform: uppercase;
-    }
-} 
-.project-header {
-        border-bottom: 1px solid @appBlack;
-        color: @appBlack;
-        margin-bottom: @baseLineHeight;
-        text-transform: uppercase;
-}
-.documentFirstHeading {
-        color: @appBlack;
-    }
-
-a.link-more {
-    font-size: @baseFontSize * 1.5;
-    text-decoration: none;
-    line-height: @baseLineHeight / 4;
-    margin-bottom: 9px;
-    &:hover {
-        color: @black;
-    }
-}
-
-
-
-// Sidebar specific styles
-
-#sidebar {
-    padding: @baseLineHeight @baseLineHeight / 2;
-    .box {
-        .clearfix();
-        h4,
-        h5 {
-            color: @appBlue;
-            margin: 5px 0px 3px 0px;
-        }
-        p {
-            margin: 0;
-            font-size: @fontSizeMini;
-            color: @black;
-        }
-        .btn {
-            margin-top: @baseLineHeight / 2;
-            .border-radius(0);
-            .buttonBackground(@grayLight, lighten(@grayLight, 5%));
-        }
-        .box-content {
-            border: 1px solid @grayLighter;
-            border-top: 4px solid;
-            .box-item {
-                padding: @paddingMini; 
-                .clearfix();
-                &:nth-child(odd) {
-                    background-color: @tableBackgroundAccent;
-                }
-            }
-        }
-    }
-}
 
 // site footer
 
 body > footer {
-    margin-bottom: 20px;
+    margin-bottom: 20px ;
     padding: 0;
     #footer {
         padding: 20px 20px 0px 20px;
