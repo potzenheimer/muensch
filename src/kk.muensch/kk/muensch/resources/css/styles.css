@@ -5212,9 +5212,11 @@ table.plain th {
 #edit-bar {
   display: inline-block;
   padding: 10px;
-  width: 100%;
+  width: 97%;
   background: #999;
   font-size: 10.2px;
+  border: 0px !important;
+  border-radius: 0px;
 }
 body > footer {
   margin-bottom: 20px ;
